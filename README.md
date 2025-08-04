@@ -1,10 +1,10 @@
 # Clustering via Self‑Supervised Diffusion  
-**Code coming soon**  
 
 [![arXiv](https://img.shields.io/badge/arXiv-2507.04283-b31b1b.svg?style=flat)](https://arxiv.org/abs/2507.04283)
 
-![Introduction Figure](Intro-fig.png)
-
+<p align="center">
+  <img src="Intro-fig.png" alt="Introduction Figure" style="max-width:30%;">
+</p>
 ## How to use
 We provide pre-extracted ImageNet-50 features along with a ready-to-run training script.
 Train CLUDI on ImageNet-50 with:
