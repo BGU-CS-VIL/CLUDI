@@ -5,10 +5,19 @@
 <img src="Intro-fig.png" alt="Introduction Figure" width="600">
 
 ## How to use
-We provide pre-extracted ImageNet-50 features along with a ready-to-run training script.
-Train CLUDI on ImageNet-50 with:
 
-```python
+### Image embeddings
+
+For generating image embeddings for different pretrained models and datasets, we follow the TEMI pipeline from  
+[TEMI-official-BMVC2023](https://github.com/HHU-MMBS/TEMI-official-BMVC2023).
+
+Concretely, we rely on their `gen_embeds.py` script to extract features for a given architecture and dataset, e.g.:
+
+```bash
+python gen_embeds.py --arch clip_ViT-B/32 --dataset CIFAR10 --batch_size 256
+```
+
+```bash
 python cludi.py --num_clusters 50
 ```
 
